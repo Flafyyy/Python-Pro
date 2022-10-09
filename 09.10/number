@@ -1,0 +1,9 @@
+chislo = float(input('Введите сумму:'))
+skidka = float(30)
+if (chislo >=1000):
+    vivod = (chislo-chislo/100*skidka)
+    print(vivod)
+else:
+    print(chislo)
+    
+    
