@@ -1,4 +1,15 @@
-a = float(input('Введите число: '))
-b = float(input('Введите число: '))
+a = int(input('Введите число: '))
+b = int(input('Введите число: '))
 c = str(input('Введите оператор: '))
-#иф с оператором
+if (c == '+'):
+    print(a+b)
+if (c == '-'):
+    print(a-b)
+if (c == '*'):
+    print(a*b)
+if (c == '/'):
+    print(a/b)
+if (c == '%'):
+    print(a%b)
+if (c == '//'):
+    print(a//b)
