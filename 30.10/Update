@@ -1,0 +1,156 @@
+import time
+ugrokone = input('Выберите + или -: ')
+ugroktwo = input('Выберите + или -: ')
+if (ugrokone == ugroktwo):
+    print('Ошибка')
+elif (ugrokone != '+' and ugrokone != '-'):
+    print('Ошибка')
+elif (ugroktwo != '+' and ugroktwo != '-'):
+    print('Ошибка')
+elif (ugrokone != ugroktwo):
+    print('Перейдём к игре')
+
+    one = input('Первая клетка: ')
+    two = input('Вторая клетка: ')
+    three = input('Третья клетка: ')
+    four = input('Четвёртая клетка: ')
+    five = input('Пятая клетка: ')
+    six = input('Шестая клетка: ')
+    seven = input('Седьмая клетка: ')
+    eight = input('Восьмая клетка: ')
+    nine = input('Девятая клетка: ')
+
+if (one != '-' or one != '+'):
+     
+    one = input('Первая клетка: ')
+    
+
+elif (two != '-' or two != '+'):
+
+    
+    two = input('Вторая клетка: ')
+    
+elif (three != '-' or three != '+'):
+    
+
+    three = input('Третья клетка: ')
+    
+elif (four != '-' or four != '+'):
+    
+    four = input('Четвёртая клетка: ')
+    
+elif (five != '-' or five != '+'):
+    
+    five = input('Пятая клетка: ')
+    
+elif (six != '-' or six != '+'):    
+    
+    six = input('Шестая клетка: ')
+    
+elif (seven != '-' or seven != '+'):    
+    
+    seven = input('Седьмая клетка: ')
+    
+elif (eight != '-' or eight != '+'):    
+    
+    eight = input('Восьмая клетка: ')
+elif (nine != '-' or nine != '+'):
+    nine = input('Девятая клетка:')
+    
+
+
+'''
+one = '-'
+two = '-'
+three = '+'
+four = '+'
+five = '-'
+six = '+'
+seven = '+'
+eight = '-'
+nine = '-'
+'''
+
+if(one == '+' and two == '+' and three == '+'):
+    if (ugrokone == '+'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '+'):
+        print('Втророй игрок победил!')
+elif(one == '-' and two == '-' and three == '-'):
+    if (ugrokone == '-'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '-'):
+        print('Втророй игрок победил!')
+elif(four == '+' and five == '+' and six == '+'):
+    if (ugrokone == '+'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '+'):
+        print('Втророй игрок победил!')
+elif(four == '-' and five == '-' and six == '-'):
+    if (ugrokone == '-'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '-'):
+        print('Втророй игрок победил!')
+elif(seven == '+' and eight == '+' and nine == '+'):
+    if (ugrokone == '+'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '+'):
+        print('Втророй игрок победил!')
+elif(seven == '-' and eight == '-' and nine == '-'):
+    if (ugrokone == '-'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '-'):
+        print('Втророй игрок победил!')
+elif(one == '+' and four == '+' and seven == '+'):
+    if (ugrokone == '+'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '+'):
+        print('Втророй игрок победил!')
+elif(one == '-' and four == '-' and seven == '-'):
+    if (ugrokone == '-'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '-'):
+        print('Втророй игрок победил!')
+elif(two == '+' and five == '+' and eight == '+'):
+    if (ugrokone == '+'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '+'):
+        print('Втророй игрок победил!')
+elif(two == '-' and five == '-' and eight == '-'):
+    if (ugrokone == '-'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '-'):
+        print('Втророй игрок победил!')
+elif(three == '+' and six == '+' and nine == '+'):
+    if (ugrokone == '+'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '+'):
+        print('Втророй игрок победил!')
+elif(three == '-' and six == '-' and nine == '-'):
+    if (ugrokone == '-'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '-'):
+        print('Втророй игрок победил!')
+elif(one == '+' and five == '+' and nine == '+'):
+    if (ugrokone == '+'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '+'):
+        print('Втророй игрок победил!')
+elif(one == '-' and five == '-' and nine == '-'):
+    if (ugrokone == '-'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '-'):
+        print('Втророй игрок победил!')
+elif(three == '+' and five == '+' and seven == '+'):
+    if (ugrokone == '+'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '+'):
+        print('Втророй игрок победил!')
+elif(three == '-' and five == '-' and seven == '-'):
+    if (ugrokone == '-'):
+        print('Первый игрок победил!')
+    elif (ugroktwo == '-'):
+        print('Втророй игрок победил!')
+else:
+
+    print('Ничья!')
