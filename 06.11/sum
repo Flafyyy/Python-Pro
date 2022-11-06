@@ -1,0 +1,9 @@
+summa = int(input('Введите сумму покупки: '))
+bonus = 0
+while (bonus < 999):
+ #    while (summa >= 10):
+    count = summa / 10
+    bonus = bonus + count
+    summa = 0
+    summa = int(input('Введите сумму покупки: '))
+print('Бонусы накоплены, время тратить')
