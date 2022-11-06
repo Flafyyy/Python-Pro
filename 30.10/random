@@ -1,7 +1,7 @@
 import random
 i = random.randint(0,101)
 
-im= int(input('Угадайте число от одного до 100: '))
+im= int(input('Угадайте число от 1 до 100: '))
 
 while(i != im):
     if(im > i):
