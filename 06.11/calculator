@@ -1,0 +1,24 @@
+ex = 'exit'
+op = input('Введите операцию: ')
+if (op == '+'):
+    one = int(input('Введите первое слогаемое: '))
+    two = int(input('Введите второе слогаемое: '))
+    rovno = one + two
+    print(rovno)
+elif (op == '-'):
+    one = int(input('Введите уменьшаемое: '))
+    two = int(input('Введите вычитаемое: '))
+    rovno = one - two
+    print(rovno)
+elif (op == '*'):
+    one = int(input('Введите первый множитель: '))
+    two = int(input('Введите второй множитель: '))
+    rovno = one * two
+    print(rovno)
+elif (op == '/'):
+    one = int(input('Введите делимое: '))
+    two = int(input('Введите делитель: '))
+    rovno = one / two
+    print(rovno)
+else:
+    print('Только +,-,* и /')
