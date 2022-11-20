@@ -1,0 +1,17 @@
+import pyautogui
+import time
+import keyboard
+pyautogui.moveTo(190,1025)
+pyautogui.click()
+#time.sleep(1)
+#pyautogui.click()
+time.sleep(1)
+pyautogui.hotkey('ctrl','v')
+pyautogui.press('enter')
+time.sleep(1)
+pyautogui.press('enter')
+while not (keyboard.is_pressed('space')):
+     while not (keyboard.is_pressed('ctrl')):
+          pyautogui.moveTo(300,250)
+          pyautogui.click()
+#зараннее скопируйте ссылку https://money-clicker.github.io/index.html прокачивать уровни зажимать контрл
