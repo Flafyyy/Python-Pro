@@ -1,0 +1,41 @@
+import random
+b=3
+yron_vraga = random.randrange(0,b)
+yron_gg=7
+xp_gg=50
+xp_vraga=100
+a=0
+g=0
+import time
+while (xp_gg > 0):
+    print('Хп ГГ -', xp_gg)
+    print('Хп врага -', xp_vraga)
+    print('Урон ГГ -', yron_gg)
+    print('Урон врага -', yron_vraga)
+    while (xp_gg >= 0 and xp_vraga >= 0):
+        xp_vraga = xp_vraga - yron_gg
+        time.sleep(1)
+        xp_gg = xp_gg - yron_vraga
+        print('хп героя',xp_gg)
+        print('хп врага',xp_vraga)
+    if (xp_vraga <= 0):
+        a = a+1
+    if (xp_vraga <= 0):
+        g = g+1
+    if (xp_gg > 0):
+        print(xp_gg)
+        yron_gg = yron_gg+3
+        b = b+1
+        xp_vraga = 100
+        while (xp_gg >= 0 and xp_vraga >= 0):
+             xp_vraga = xp_vraga - yron_gg
+             time.sleep(1)
+             xp_gg = xp_gg - yron_vraga
+             print('хп героя',xp_gg)
+             print('хп врага',xp_vraga)
+    if (a >= 5):
+        xp_gg = xp_gg + 10
+        a=0
+    
+if (xp_gg <= 0):
+    print('ГГ убил', g, 'врагов')
