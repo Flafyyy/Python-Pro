@@ -1,0 +1,11 @@
+n = int(input())
+if n > 9:
+    print('неправильно')
+if n <= 9:    
+    import pyautogui
+    import time
+    pyautogui.moveTo(190,1025)
+    pyautogui.click()
+    time.sleep(1)
+    for step in range(n-1):
+         pyautogui.hotkey('ctrl','t')
