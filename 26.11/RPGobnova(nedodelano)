@@ -1,0 +1,96 @@
+import random
+from tkinter import *
+import tkinter
+b=3
+l = 10
+yron_vraga = random.randrange(0,b)
+yron_gg=7
+xp_gg=100
+xp_vraga=100
+a=0
+g=0
+p=7
+window= Tk()
+window.title("rpg")
+window.geometry('400x250')
+lbl = Label(window, text="привет", font=("Arial Bold", 50))
+
+import time
+while (xp_gg > 0):
+    v= random.randrange(0,7)
+    n = input('Выберите оружие:1-меч,2-лук,3-бомба: ')
+    if n == 1:
+        if v == 3:
+            yron_gg = yron_gg + 2
+        else:
+            yron_gg = p
+    if n == 2:
+        if v == 1:
+            yron_gg = yron_gg + 2
+        else:
+            yron_gg = p
+    if n == 3:
+        if v == 2:
+            yron_gg = yron_gg + 2
+        else:
+            yron_gg = p
+   
+    if v == 1:
+        xp_vraga = 50
+        yron_vraga= random.randrange(4,l)
+        lbl = Label(window, text="ГГ:Летучая тварь!", font=("Arial Bold", 50))
+    if v == 2:
+        xp_vraga = 130
+        yron_vraga = 1
+        lbl = Label(window, text="ГГ:*смотрит наверх* Ёшкин кошкин", font=("Arial Bold", 50))
+    if v == 3:
+        xp_vraga = 30
+        yron_vraga = 1
+        lbl = Label(window, text="ГГ:привет малыш Враг:*кусает* ГГ: АЙ!", font=("Arial Bold", 50))
+    if v == 4:
+        xp_vraga = 100
+        yron_vraga = random.randrange(0,b)
+    if v == 5:
+        xp_vraga = 100
+        yron_vraga = random.randrange(0,b)
+    if v == 6:
+        xp_vraga = 100
+        yron_vraga = random.randrange(0,b)
+    lbl1 = Label(window, text="Хп ГГ-", font=("Arial Bold", 50))
+    lbl111=Label(window,text=xp_gg,font=("Arial Bold"))
+    lbl112 = Label(window, text="Хп Врага-",xp_vraga, font=("Arial Bold", 50))
+    lbl123 = Label(window, text=xp_vraga, font=("Arial Bold", 50))
+    lbl1234 = Label(window, text="Урон Врага-",yron_vraga, font=("Arial Bold", 50))
+    lbl1235 = Label(window, text=yron_vraga, font=("Arial Bold", 50))
+    
+    while (xp_gg >= 0 and xp_vraga >= 0):
+        xp_vraga = xp_vraga - yron_gg
+        time.sleep(1)
+        xp_gg = xp_gg - yron_vraga
+        lbl5 = Label(window, text="Хп ГГ-", font=("Arial Bold", 50))
+        lbl6 = Label(window, text=xp_gg, font=("Arial Bold", 50))
+        lbl55 = Label(window, text="Хп Врага", font=("Arial Bold", 50))
+        lbl65 = Label(window, text=xp_vraga, font=("Arial Bold", 50))
+        
+    if (xp_vraga <= 0):
+        a = a+1
+    if (xp_vraga <= 0):
+        g = g+1
+    if (xp_gg > 0):
+        lbl7 = Label(window, text=xp_gg, font=("Arial Bold", 50))
+        yron_gg = yron_gg+3
+        p = p +3
+        b = b+1
+        l = l+1
+        time.sleep(1)
+        lbl8 = Label(window, text="Хп ГГ-",xp_gg, font=("Arial Bold", 50))
+        lbl9 = Label(window, text="Хп Врага-",xp_vraga, font=("Arial Bold", 50))
+        
+    if (a >= 5):
+        xp_gg = xp_gg + 30
+        a=0
+        lbl10 = Label(window, text="Аптечка!", font=("Arial Bold", 50))
+    
+if (xp_gg <= 0):
+    lbl11 = Label(window, text="ГГ убил",g,"врагов" font=("Arial Bold", 50))
+lbl.grid(column=0, row=0)
