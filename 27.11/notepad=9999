@@ -1,0 +1,21 @@
+import pyautogui
+import time
+m=int(input())
+n=int(0)
+o=str(n)
+for step in range(m):
+       n=n+1
+       o=str(n)
+       pyautogui.hotkey('win','r')
+       pyautogui.hotkey('ctrl','v')
+       time.sleep(1)
+       pyautogui.press('enter')
+       pyautogui.moveTo(160,220)
+       pyautogui.click()
+       pyautogui.moveTo(160,320)
+       pyautogui.click()
+       time.sleep(1)
+       pyautogui.write(o)
+       pyautogui.press('enter')
+       pyautogui.moveTo(1100,200)
+       pyautogui.click()
