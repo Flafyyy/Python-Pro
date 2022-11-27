@@ -1,0 +1,10 @@
+n = int(input())
+pp=0
+p=1
+fn=1
+for i in range(n):
+    if p+fn<n:
+        pp=p
+        p=fn
+        fn=pp+p
+        print(fn)
