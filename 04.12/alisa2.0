@@ -40,3 +40,4 @@ while (ix != 'выход'):
         pyautogui.write('chrome')
         pyautogui.press('enter')
     
+#new changes
