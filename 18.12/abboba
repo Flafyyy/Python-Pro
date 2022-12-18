@@ -1,0 +1,16 @@
+md=int(0)
+mm=int(0)
+flag=int(0)
+
+
+
+for i in range(84052, 84130):
+    flag=0
+    for j in range(1,i+1):
+        
+        if (i % j==0):
+            flag=flag+1
+    if (flag >md):
+        md=flag
+        mm=i
+print(md,mm)
