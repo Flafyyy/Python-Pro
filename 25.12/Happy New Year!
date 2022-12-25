@@ -1,0 +1,21 @@
+f=str(input("Enter the country:"))
+if f == "Russia":
+    print("Дед мороз поздравляет вас с Новым годом!")
+if f == "Italia":
+    print("Babbo Natale ti augura un Felice Anno Nuovo!")
+if f == "Finland":
+    print("Joulupukki toivottaa Hyvää Uutta Vuotta!")
+if f == "Norway":
+    print("Julebukk ønsker deg Et Riktig Godt Nytt År!")
+if f == "United Kindom":
+    print("The Father of Christmas wishes you a Happy New Year")
+if f == "Albania":
+    print("BabaDimpi ju uron Gëzuar Vitin e Ri!")
+if f == "Greece":
+    print("Ο αγνός Βασίλης σας εύχεται Καλή Χρονιά!")
+if f == "Tatarstan":
+    print("Кышбабай Сезне Яңа ел белән котлый!")
+if f == "Francia":
+    print("Pair Noel vous félicite pour la Nouvelle année!")
+if f == "Japan":
+    print("瀬月さん、あけましておめでとうございます！")
