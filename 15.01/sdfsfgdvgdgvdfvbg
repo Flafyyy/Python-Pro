@@ -1,0 +1,7 @@
+OVOSHIIIII=[]
+i = input('ВВЕВДЕЕДВЕДДИТЕ ОВОЩ!!!! В СПИСОК "OVOSHIIIII" ')
+u = input('ЕЩЁЁЁ РАЗАПАПЗАПЗУВХПЗ ')
+OVOSHIIIII.append(i)
+OVOSHIIIII.append(u)
+print(OVOSHIIIII)
+print("А ТЫ МОЛОДЕЦ КАК Я ВИЖУЫВАЫВПЫПЫАЦЫВ апЫПыпаыпвкыакыап")
