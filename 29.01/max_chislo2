@@ -1,0 +1,14 @@
+h=0
+g=0
+ind=0
+a=[]
+n=int(input())
+while g != n:
+      j = int(input())
+      a.append(j)
+      g = g +1
+
+for step in a:
+    if abs(step) > h:
+        h = abs(step)
+print(h)
