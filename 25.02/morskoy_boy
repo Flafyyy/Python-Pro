@@ -1,0 +1,33 @@
+import random
+g=0
+h=0
+b=0
+k=int(1)
+q=int(1)
+
+m = [['o','u','u','u','o',':','u','u','o','u','u'],['u','u','u','u','u',':','o','u','u','u','u'],['o','u','u','u','u',':','o','u','u','u','u'],['o','o','u','u','u',':','u','u','u','o','u'],['u','u','u','u','u',':','u','u','u','u','u'],['u','u','u','u','u',':','u','u','u','u','u'],['u','u','u','u','u',':','u','u','u','u','u'],['u','u','u','u','u',':','u','u','u','u','u'],['u','u','u','u','u',':','u','u','u','u','u'],['u','u','u','u','u',':','u','u','o','u','u'],]
+
+
+while h != '!выход':
+    for i in range(len(m)):
+        for j in range(len(m[i])):
+            print(m[i][j], end = ' ')
+        print(' ')
+    a=k
+    j=q
+    c=int(input())
+    v=int(input())
+    if m[c][v] == 'o':
+        m[c][v] = 'x'
+        
+        print('ПОПАЛ!')
+    else:
+        print('Ха ха, не попал')
+    b=random.randrange(1,6)
+    
+    n=random.randrange(1,10)
+    if m[b][n] == 'o':
+        m[b][n]='x'
+        print('ПОПАЛ')
+    else:
+        print('НЕ ПОПАЛ')
