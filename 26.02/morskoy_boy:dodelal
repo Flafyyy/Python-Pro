@@ -1,0 +1,66 @@
+import random
+g=0
+h=0
+b=0
+k=int(1)
+q=int(1)
+Jperv=0
+Jvtor=0
+f=1
+m = [['o','u','u','o','u','u','o','o','u','o'],['o','u','u','o','u','u','u','u','u','u'],['u','u','u','u','u','u','o','o','o','u'],['o','u','u','u','o','u','u','u','u','u'],['o','u','u','u','u','u','u','u','u','u'],['o','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','o','o','o','o','u'],['u','u','o','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','o','u','o']]
+z = [['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u']]
+p = [['u','o','o','o','o','u','o','o','u','u'],['o','u','u','u','u','o','u','u','u','u'],['u','u','u','u','u','o','u','u','u','u'],['u','u','u','u','u','o','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','o','u','u','o','u','u','u','u'],['u','u','u','u','u','o','u','u','u','u'],['u','u','u','u','u','o','u','u','u','o'],['o','u','u','u','u','u','u','u','u','o'],['u','u','u','u','u','o','u','o','o','u']]
+#for i in range(len(p)):
+        #for j in range(len(p[i])):
+           # print(p[i][j], end = ' ')
+       # print(' ')
+#print(' ')
+
+for i in range(len(m)):
+        for j in range(len(m[i])):
+            print(m[i][j], end = ' ')
+        print(' ')
+print(' ')
+while Jperv != 20 and Jvtor != 20:
+    for i in range(len(z)):
+        for j in range(len(z[i])):
+            print(z[i][j], end = ' ')
+        print(' ')
+    
+    while f==1:  
+        c=int(input())
+        v=int(input())
+        c=c-1
+        v=v-1
+        if p[v][c] == 'o':
+        
+        
+            z[v][c] = 'x'
+        
+            print('ПОПАЛ!')
+            f=1
+            
+            for i in range(len(z)):
+                for j in range(len(z[i])):
+                    print(z[i][j], end = ' ')
+                print(' ')
+        else:
+            f=2
+            print('Ха ха, не попал')
+    while f==2:
+        b=random.randrange(1,6)
+    
+        n=random.randrange(1,10)
+        print('Робот:')
+        if m[b][n] == 'o':
+            m[b][n]='x'
+            print('ПОПАЛ!')
+            f=2
+        else:
+            f=1
+            print('Ха ха, не попал')
+            print(b,n)
+if Jperv==20:
+    print('УРААА, я умнее компьютера!!!!!')
+if Jvtor==20:
+    print('ХА ХА, у меня памяти 16 мб!!! Я умнее!!')
