@@ -1,0 +1,18 @@
+c=int(input())
+v=int(input())
+m=int(input())
+def ymn(c,v,m):
+    x=1
+    
+    if c > v:
+        b=c
+        c=v
+        v=b
+    for i in range(c,v+1):
+        if i == m:
+            return("Входит!")
+        
+    return("Не входит!")
+        
+    
+print(ymn(c,v,m))
