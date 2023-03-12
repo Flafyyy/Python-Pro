@@ -1,0 +1,14 @@
+h=int(input())
+k=int(input())
+
+a=[]
+def eto_baza(h,k):
+    b=0
+    if h > k:
+        b=h
+        h=k
+        k=b
+    while h != k+1:
+        print(h*h)
+        h=h+1
+eto_baza(h,k)
