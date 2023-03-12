@@ -1,0 +1,27 @@
+a=[]
+w=int(input())
+z=0
+while w !=z:
+    x=int(input())
+    a.append(x)
+    z+=1
+    
+
+
+
+
+
+def spis(a):
+    c=0
+    b=[]
+    for i in a:
+        for j in a:
+            if i==j:
+                c+=1
+        if c==1:
+            b.append(i)
+            c=0
+        else:
+            c=0
+    return(b)
+print(spis(a))
