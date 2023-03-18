@@ -1,0 +1,18 @@
+g=int(input('Тебе на скок квадрат?: '))
+def IIyatxIIyat(N):
+    a=[[]]
+    b=[]
+    
+    h=0
+    while N!=h:
+        b.append("N")
+        h=h+1
+    h=0
+    while N != h:
+        a.append(b)
+        h=h+1
+    for i in range(len(a)):
+        for j in range(len(a[i])):
+            print(a[i][j], end = ' ')
+        print(' ')
+IIyatxIIyat(g)
