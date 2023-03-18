@@ -1,0 +1,35 @@
+#команды:
+#vich - вычитание
+#sklad - сложение
+#ymn-умножение
+#delit-деление
+def vichit(g,h):
+    a= g-h
+    print(a)
+def slad(g,h):
+    a= g+h
+    print(a)
+def ymnoj(g,h):
+    a= g*h
+    print(a)
+def delok(g,h):
+    a= g/h
+    print(a)
+
+f=input('Что считать будем?: ')
+if f == "vich":
+    j=int(input("1 число: "))
+    k=int(input("2 число: "))
+    vichit(j,k)
+if f == "sklad":
+    j=int(input("1 число: "))
+    k=int(input("2 число: "))
+    slad(j,k)
+if f == "ymn":
+    j=int(input("1 число: "))
+    k=int(input("2 число: "))
+    ymnoj(j,k)
+if f == "delit":
+    j=int(input("1 число: "))
+    k=int(input("2 число: "))
+    delok(j,k)
