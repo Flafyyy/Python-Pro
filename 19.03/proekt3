@@ -7,6 +7,7 @@ f=0
 l=0
 import random
 def IIyatxIIyat(N):
+    
         pp=0
         a=[[]]
         b=[]
@@ -25,24 +26,10 @@ def IIyatxIIyat(N):
             for j in range(len(a[i])):
                 print(a[i][j], end = ' ')
             print(' ')
-        while n*2-3 != nit
-            bb=random.randint(0,n-1)
-            nn=random.randint(0,n-1)
-            if spis[bb][nn] == '▇':
-                spis[bb][nn]=='@'
-                nit=nit+1
-        while n*n != pp
-            kk=int(input('Куда хотите поставить?'))
-            jj=int(input('Куда хотите поставить?'))
-            if spis[kk][jj] == '▇':
-                print('Вы не взорвались!')
-                pp=pp+1
-            if spis[kk][jj] == '@':
-                print('Вы проиграли :(')
-                return()
-            
         
-            
+
+
+
 while f != 'выход':           
     f=input("Что вводить будешь?")
     if f == 'krestik&nolik':
@@ -173,7 +160,7 @@ while f != 'выход':
             if m[0][2] == 'o' and m[1][1] == 'o' and m[2][0] == 'o':
                 print('Компьютер победил!')
                 break
-            
+
 
 
 
@@ -187,8 +174,8 @@ while f != 'выход':
     if f == "kvadrat":
 
         g=int(input('Тебе на скок квадрат?: '))
-        
-    
+
+
         IIyatxIIyat(g)
     if f == 'alisa':
         print('#Команды: сказку,афоризм,анекдот')
