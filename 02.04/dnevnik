@@ -1,0 +1,45 @@
+import random
+h=random.randint(1,5)
+k=random.randint(1,5)
+d={'ФИО':'Иван Иванов Иванович', 'Математика':h, 'Русский язык':k}
+a={}
+h=0
+while True:
+    l='есть'
+    print(' ')
+    print('команды: добавить запись, изменить, удалить, вывод всех оценок, среднее')
+    print(' ')
+    f=input('Чего хочешь? P.S. только не ставь плохие оценки: ')
+    print(' ')
+    if f == 'добавить запись':
+        while l != 'нету':
+            f=input('Какой предмет?')
+            h=int(input('Какая оценка?'))
+            if f not in d.keys():
+                l='нету'
+            else:
+                print('Такой предмет уже есть!')
+        d[f]=h   
+        
+    if f == 'изменить':
+        
+        f=input('Какой предмет?')
+        h=int(input('Какая оценка?'))
+        d[f]=h
+    if f == 'удалить':
+        f=input('Какой предмет?')
+        d.pop(f)
+    if f == 'вывод всех оценок':
+        print(d.items())
+    if f == 'среднее':
+        a.update(d)
+        a.pop('ФИО')
+        
+        for i in a.values():
+            h=h+i
+        s=h/len(a)
+        print(s)
+    h=0
+    s=0
+    a={}
+        
