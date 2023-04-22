@@ -1,0 +1,21 @@
+f = open("1d.txt",'r')
+j=f.readline()
+f.close
+
+
+
+
+
+
+g= open("2d.txt",'r')
+k=g.readline()
+g.close
+p= j+k
+
+
+
+
+h = open("2.txt",'w')
+h.write(p)
+h.close
+print(p)
