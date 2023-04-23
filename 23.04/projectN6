@@ -1,0 +1,125 @@
+import random
+import time
+g=0
+h=0
+b=0
+k=int(1)
+q=int(1)
+z=1
+x=1
+odch=0
+vtch=0
+zn=0
+otv=0
+ot=0
+dead=0
+m = [['o','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],['u','u','u','u','u','u','u','u','u','u'],]
+
+print('Привет, это я Максим. Смысл этой игры решать примеры, до которых ещё нужно будет дойти.')
+while h != '!выход':
+    if m[z][x] != "o":
+        for i in range(len(m)):
+            for j in range(len(m)):
+                if m[i][j]=='a':
+                    g=1
+    
+                
+        if g==0:
+            z=random.randrange(0,10)
+            x=random.randrange(0,10)
+        
+            m[z][x]="a"
+    if m[k][q] == m[z][x]:
+        odch=random.randrange(1,1001)
+        vtch=random.randrange(1,1001)
+        zn =random.randrange(0,4)
+        if zn == 0:
+            zn = '+'
+            suma=odch+vtch
+            print(odch, zn, vtch, '=')
+            n=time.time()
+            e=time.time()   
+            otv=int(input(' '))
+            if (otv == str(suma)) or ((e-n)>30):
+                print('Ты проиграл!:(')
+                dead =1 
+                break
+            else:
+                print('Молодец!:)')
+                ot=ot+1
+                
+                
+                
+        if zn == 1:
+            zn= '-'
+            suma=odch-vtch
+            print(odch, zn, vtch, '=')
+            n=time.time()
+            e=time.time()   
+            otv=int(input(' '))
+            if (otv == str(suma)) or ((e-n)>1000):
+                print('Ты проиграл!:(')
+                dead =1 
+                break
+            else:
+                print('Молодец!:)')
+                ot=ot+1
+                break
+        if zn == 2:
+            zn='*'
+            suma=odch*vtch
+            print(odch, zn, vtch, '=')
+            n=time.time()
+            e=time.time()   
+            otv=int(input(' '))
+            if (otv == str(suma)) or ((e-n)>30):
+                print('Ты проиграл!:(')
+                dead =1 
+                break
+            else:
+                print('Молодец!:)')
+                ot=ot+1
+                break
+        if zn == 3:
+            zn='/'
+            suma=odch/vtch
+            print(odch, zn, vtch, '=')
+            n=time.time()
+            e=time.time()   
+            otv=int(input(' '))
+            if (otv == str(suma)) or ((e-n)>30):
+                print('Ты проиграл!:(')
+                dead =1 
+                break
+            else:
+                print('Молодец!:)')
+                ot=ot+1
+                break
+    if dead == 1:
+        break
+    print('Правильных ответов:', ot)
+    for i in range(len(m)):
+        for j in range(len(m[i])):
+            print(m[i][j], end = ' ')
+        print(' ')
+    a=k
+    j=q
+    
+    h=str(input('Куда пойдём?'))
+    if h == 'вправо':
+        q=q+1
+    if h == 'влево':
+        q=q-1
+    if h == 'вверх':
+        k=k-1
+    if h == 'вниз':
+        k=k+1
+    if k > 10 or k < 0 or q > 10 or q < 0:
+        print('Извини,такого места на карте нет')
+        k=int(1)
+        q=int(1)
+        m[k-1][q-1] = 'o'
+        m[a-1][j-1] = 'u'
+    elif k < 11 and k>=1 and q < 11 and q >= 0:
+        m[k-1][q-1] = 'o'
+        m[a-1][j-1] = 'u'
