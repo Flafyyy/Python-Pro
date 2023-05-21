@@ -1,0 +1,9 @@
+n=0
+f=open('n stroki.txt', 'r')
+n=int(input())
+a=f.read().splitlines()
+
+for i in range(n):
+    
+    print(a[n-i-n-1])
+f.close()
